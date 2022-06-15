@@ -12,7 +12,7 @@ email: "danhmed@gmail.com"
 github: DanielAlhassan
 orcid: 
 #googlescholar:  
-linkedin: daniel-alhassan
+linkedin: daniel-alhassan-41981331
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::awesomecv:
@@ -72,7 +72,7 @@ skills %>%
   )
 ```
 
-# Honors
+# Awards and Honors
 
 ```{r HONORS}
 honors %>%
@@ -85,18 +85,18 @@ honors %>%
   )
 ```
 
-# Projects
+<!-- # Projects -->
 
-```{r PROJECTS}
-projects %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-```
+<!-- ```{r PROJECTS} -->
+<!-- projects %>% -->
+<!--   detailed_entries( -->
+<!--     with = area, -->
+<!--     what = accomplishment, -->
+<!--     why = detail, -->
+<!--     when = year, -->
+<!--     where = where -->
+<!--   ) -->
+<!-- ``` -->
 
 # Works
 
