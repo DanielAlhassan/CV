@@ -1,2 +1,3 @@
 # Daniel Alhassan's CV
-myCV using vitae R package with inspiration from [Bryan Jenks](https://github.com/tallguyjenks)
+
+I created my data driven CV using [vitae R package](https://pkg.mitchelloharawild.com/vitae/) with inspiration from [Bryan Jenks](https://github.com/tallguyjenks)
