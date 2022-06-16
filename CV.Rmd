@@ -10,7 +10,7 @@ phone: +1 504 931 7691
 www: "dalhassan.netlify.app"
 email: "danhmed@gmail.com"
 github: DanielAlhassan
-orcid: 
+orcid: 0000-0003-0944-5818
 #googlescholar:  
 linkedin: daniel-alhassan-41981331
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -36,7 +36,17 @@ xfun::pkg_attach2(packages, message = FALSE)
 source(file = here("r","data.r"))
 ```
 
-# Employment
+# Research Interests
+
+```{r PROJECTS}
+research.interests %>%
+  detailed_entries(
+    with = area,
+    what = subarea
+  )
+```
+
+# Work Experience
 
 ```{r EMPLOYMENT}
 work %>%
@@ -62,6 +72,22 @@ edu %>%
   )
 ```
 
+# Publications
+
+```{r}
+ bibliography_entries("packages.bib") 
+
+# scholarly.activities %>%
+#   detailed_entries(
+#     with = area,
+#     what = accomplishment,
+#     why = detail,
+#     when = year,
+#     where = where
+#   )
+```
+
+
 # Skills
 
 ```{r SKILLS}
@@ -85,33 +111,7 @@ honors %>%
   )
 ```
 
-<!-- # Projects -->
-
-<!-- ```{r PROJECTS} -->
-<!-- projects %>% -->
-<!--   detailed_entries( -->
-<!--     with = area, -->
-<!--     what = accomplishment, -->
-<!--     why = detail, -->
-<!--     when = year, -->
-<!--     where = where -->
-<!--   ) -->
-<!-- ``` -->
-
-# Works
-
-```{r WORKS}
-works %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-```
-
-\pagebreak
+<!-- \pagebreak -->
 
 # Certifications
 
@@ -125,3 +125,4 @@ certifications %>%
     where = where
   )
 ```
+
