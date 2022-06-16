@@ -54,7 +54,7 @@ work %>%
     with = title,
     what = unit,
     why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    when = glue::glue("{startMonth} {startYear} --- {endMonth} {endYear}",.na = ""),
     where = where
   )
 ```
@@ -67,26 +67,50 @@ edu %>%
     with = inst,
     what = degree,
     why = detail,
-    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    when = glue::glue("{startYear} --- {endYear}",.na = ""),
     where = where
   )
 ```
 
 # Publications
 
-```{r}
+```{r PUBLICATIONS}
  bibliography_entries("packages.bib") 
 
-# scholarly.activities %>%
-#   detailed_entries(
-#     with = area,
-#     what = accomplishment,
-#     why = detail,
-#     when = year,
-#     where = where
-#   )
+manuinprep %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
 ```
 
+
+# Conferences Attended
+```{r}
+ conference %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+```
+
+# Talks and Workshops 
+```{r}
+talks %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+```
 
 # Skills
 
